@@ -1,0 +1,23 @@
+﻿[
+  {
+    "readableName": "№ 1",
+    "stringId": "1_e",
+    "ipAddress": "zzz.zzz.zzz.zzz",
+    "port": 9600,
+    "location": "",
+    "motorCurrentFactor": 10,
+    "schemaName": "schemas.main"
+  },
+
+  {
+    "readableName": "№ 2",
+    "stringId": "4",
+    "ipAddress": "zzz.zzz.zzz.zzz",
+    "port": 9600,
+    "location": "",
+    "schemaName": "schemas.main"
+  }
+
+
+
+]

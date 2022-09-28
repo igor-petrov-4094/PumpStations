@@ -1,0 +1,582 @@
+﻿[
+  {
+    "parameterStringId": "pch.freq_output",
+    "readableName": "ПЧ: Выходная частота, ГЦ",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "D303",
+    "realValueFactor": 0.01,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "pch.speed_fact",
+    "readableName": "ПЧ: Факт. скорость, об/мин",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "D304",
+    "realValueFactor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "pch.motor_current",
+    "readableName": "ПЧ: Ток двигателя, А",
+    "isTech": false,
+    "format": "0.0",
+    "cellAddress": "D305",
+    "realValueFactor": 0.01,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "pch.motor_voltage",
+    "readableName": "ПЧ: Напряжение двиг., В",
+    "isTech": false,
+    "format": "0.0",
+    "cellAddress": "D306",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "pch.state.failure",
+    "readableName": "ПЧ: Авария",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "300.04",
+    "realValueFactor": 1,
+    "packetNo": 2,
+    "failureName": "ПЧ",
+  },
+  {
+    "parameterStringId": "pch.state.malfunction",
+    "readableName": "ПЧ: Отказ",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "300.03",
+    "realValueFactor": 1,
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "pch.state.inprocess",
+    "readableName": "ПЧ: Работа",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "300.01",
+    "realValueFactor": 1,
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "pch.state.ready",
+    "readableName": "ПЧ: Готов",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "300.00",
+    "realValueFactor": 1,
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "protection.dry_run_pump_unit",
+    "readableName": "ЗАЩ: Сухой ход насосн. агрег.",
+    "isTech": false,
+    "cellAddress": "301.00",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "protection.pump_unit_current_excess",
+    "readableName": "ЗАЩ: Превыш. тока насосн. агрег.",
+    "isTech": false,
+    "cellAddress": "301.01",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "protection.voltage_disappearance",
+    "readableName": "ЗАЩ: Пропадание напряжения",
+    "isTech": false,
+    "cellAddress": "301.02",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "locks.bore_debet_excess",
+    "readableName": "БЛОК: Превыш. дебета скважины",
+    "isTech": false,
+    "cellAddress": "301.03",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "locks.bore_consumption_excess",
+    "readableName": "БЛОК: Превыш. расхода скважины",
+    "isTech": false,
+    "cellAddress": "301.04",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.pump_aggregate_stopping",
+    "readableName": "СИГН: Останов насосного агрегата",
+    "isTech": false,
+    "cellAddress": "301.09",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.bore_debet_elevation",
+    "readableName": "СИГН: Повышение дебета скважины",
+    "isTech": false,
+    "cellAddress": "301.10",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.pump_aggregate_current_elevation",
+    "readableName": "СИГН: Повышение тока насосного агрегата",
+    "isTech": false,
+    "cellAddress": "301.11",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.bore_level_decrease",
+    "readableName": "СИГН: Понижение уровня в скважине",
+    "isTech": false,
+    "cellAddress": "301.12",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.no_pch_controller_interchange",
+    "readableName": "СИГН: Нет обмена контроллер/ПЧ",
+    "isTech": false,
+    "cellAddress": "301.13",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.general_failure",
+    "readableName": "СИГН: Общая авария",
+    "isTech": false,
+    "cellAddress": "300.08",
+    "packetNo": 2,
+    "failureName": "ОБЩ",
+  },
+  {
+    "parameterStringId": "signalling.door_is_open",
+    "readableName": "ОС: Дверь открыта",
+    "isTech": false,
+    "cellAddress": "301.07",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "signalling.volume_defection",
+    "readableName": "ОС: Нарушение объема",
+    "isTech": false,
+    "cellAddress": "301.08",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "indication.manual",
+    "readableName": "РЕЖ: Ручной",
+    "isTech": false,
+    "cellAddress": "300.05",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "indication.off",
+    "readableName": "РЕЖ: Отключен",
+    "isTech": false,
+    "cellAddress": "300.07",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "indication.automate",
+    "readableName": "РЕЖ: Автомат",
+    "isTech": false,
+    "cellAddress": "300.06",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "control.pump",
+    "readableName": "УПР. НАСОС: Пуск/стоп",
+    "isTech": false,
+    "cellAddress": "300.01",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "control.general.run",
+    "readableName": "УПР: Пуск",
+    "isTech": false,
+    "cellAddress": "200.00",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "control.general.stop",
+    "readableName": "УПР: Стоп",
+    "isTech": false,
+    "cellAddress": "200.01",
+    "packetNo": 2
+  },
+  {
+    "parameterStringId": "params.pressure.given",
+    "readableName": "ПАРАМ: Заданное давление",
+    "realValueFactor": 0.1,
+    "format": "0.0",
+    "isTech": false,
+    "cellAddress": "D200",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "params.pressure.fact",
+    "readableName": "ПАРАМ: Давление фактическое",
+    "realValueFactor": 0.1,
+    "format": "0.0",
+    "isTech": false,
+    "cellAddress": "D301",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "params.level_above_pump",
+    "readableName": "ПАРАМ: Уровень над насосом",
+    "realValueFactor": 0.1,
+    "format": "0.0",
+    "isTech": false,
+    "cellAddress": "D300",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "params.consumption",
+    "readableName": "ПАРАМ: Расход",
+    "realValueFactor": 0.1,
+    "format": "0.0",
+    "isTech": false,
+    "cellAddress": "D302",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "D216",
+    "readableName": "D216",
+    "realValueFactor": 0.1,
+    "isTech": true,
+    "cellAddress": "D216",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "params.computable.level_ex",
+    "readableName": "ПАРАМ: Уровень до воды",
+    "format": "0.0",
+    "isTech": false,
+    "cellAddress": "",
+    "realValueFactor": 0.1,
+    "expression": "D216_minus_D300"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "parameterStringId": "adui.group.pch.freq_output",
+    "readableName": "ПЧ: Выходная частота, ГЦ",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "W103",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.pch.motor_current",
+    "readableName": "ПЧ: Ток двигателя, А",
+    "isTech": false,
+    "format": "0.0",
+    "cellAddress": "W104",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.pch.motor_voltage",
+    "readableName": "ПЧ: Напряжение двигателя, В",
+    "isTech": false,
+    "format": "0.0",
+    "cellAddress": "W105",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.pch.state.failure",
+    "readableName": "ПЧ: Авария",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W110.08",
+    "realValueFactor": 1,
+    "packetNo": 1,
+    "failureName": "ПЧ(Г)",
+  },
+  {
+    "parameterStringId": "adui.group.pch.state.inprocess",
+    "readableName": "ПЧ: Работа",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W110.09",
+    "realValueFacptor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.pch.state.auto.off",
+    "readableName": "ПЧ: Автомат отключен",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W110.06",
+    "realValueFactor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.pch.state.no.exchange",
+    "readableName": "ПЧ: Нет обмена ПЛК-ПЧ",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W111.03",
+    "realValueFactor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.soft.starter.state.inprocess",
+    "readableName": "УПП: работа",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W110.14",
+    "realValueFactor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.soft.starter.state.auto.off",
+    "readableName": "УПП: автомат отключен",
+    "isTech": false,
+    "format": "",
+    "cellAddress": "W110.07",
+    "realValueFactor": 1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.params.pressure.given",
+    "readableName": "Давление (заданное)",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "W101",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.params.pressure.fact",
+    "readableName": "Давление (факт)",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "W102",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.params.pressure.3",
+    "readableName": "Давление 3",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "W100",
+    "realValueFactor": 0.01,
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.group.params.consumption",
+    "readableName": "Расход",
+    "isTech": false,
+    "format": "0.00",
+    "cellAddress": "W106",
+    "realValueFactor": 0.1,
+    "packetNo": 1
+  },
+
+
+
+  {
+    "parameterStringId": "adui.pump1.mode.indication.manual",
+    "readableName": "РЕЖ: Насос1: ручной",
+    "isTech": false,
+    "cellAddress": "W110.01",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.pump1.mode.indication.auto",
+    "readableName": "РЕЖ: Насос1: автомат",
+    "isTech": false,
+    "cellAddress": "W110.00",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.pump1.mode.indication.off",
+    "readableName": "РЕЖ: Насос1: отключен",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump1TurnedOff",
+  },
+
+  {
+    "parameterStringId": "adui.pump1.state.indication.failure",
+    "readableName": "СОСТ: Насос1: авария",
+    "isTech": false,
+    "cellAddress": "W110.15",
+    "packetNo": 1,
+    "failureName": "Н1",
+  },
+  {
+    "parameterStringId": "adui.pump1.state.indication.ready",
+    "readableName": "СОСТ: Насос1: готовность",
+    "isTech": false,
+    "cellAddress": "W111.01",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump1.pump.control.running",
+    "readableName": "УПР: Насос1: пуск",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump1Running",
+  },
+  {
+    "parameterStringId": "adui.pump1.pump.control.stopped",
+    "readableName": "УПР: Насос1: стоп",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump1Stopped",
+  },
+  {
+    "parameterStringId": "adui.pump1.signalling.pch.failure.na1",
+    "readableName": "СИГН: Насос1: авария ПЧ при работе с НА1",
+    "isTech": false,
+    "cellAddress": "W111.06",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump1.signalling.pch.auto.turned.off.na1",
+    "readableName": "СИГН: Насос1: отключение автомата ПЧ при работе с НА1",
+    "isTech": false,
+    "cellAddress": "W111.10",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump1.signalling.soft.starter.auto.turned.off.na1",
+    "readableName": "СИГН: Насос1: отключение автомата УПП при работе с НА1",
+    "isTech": false,
+    "cellAddress": "W111.08",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump1.signalling.pch.driven",
+    "readableName": "СИГН: Насос1: работа от ПЧ",
+    "isTech": false,
+    "cellAddress": "W110.10",
+    "packetNo": 1,
+  },
+
+  {
+    "parameterStringId": "adui.pump1.signalling.soft.starter.driven",
+    "readableName": "СИГН: Насос1: работа от УПП",
+    "isTech": false,
+    "cellAddress": "W110.11",
+    "packetNo": 1,
+  },
+
+
+
+
+
+
+  {
+    "parameterStringId": "adui.pump2.mode.indication.manual",
+    "readableName": "РЕЖ: Насос2: ручной",
+    "isTech": false,
+    "cellAddress": "W110.03",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.pump2.mode.indication.auto",
+    "readableName": "РЕЖ: Насос2: автомат",
+    "isTech": false,
+    "cellAddress": "W110.02",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.pump2.mode.indication.off",
+    "readableName": "РЕЖ: Насос2: отключен",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump2TurnedOff",
+  },
+
+  {
+    "parameterStringId": "adui.pump2.state.indication.failure",
+    "readableName": "ИНД: Насос2: авария",
+    "isTech": false,
+    "cellAddress": "W111.00",
+    "packetNo": 1,
+    "failureName": "Н2",
+  },
+  {
+    "parameterStringId": "adui.pump2.state.indication.ready",
+    "readableName": "ИНД: Насос2: готовность",
+    "isTech": false,
+    "cellAddress": "W111.02",
+    "packetNo": 1
+  },
+  {
+    "parameterStringId": "adui.pump2.pump.control.running",
+    "readableName": "УПР: Насос2: пуск",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump2Running",
+  },
+  {
+    "parameterStringId": "adui.pump2.pump.control.stopped",
+    "readableName": "УПР: Насос2: стоп",
+    "isTech": false,
+    "cellAddress": "",
+    "expression": "IsPump2Stopped",
+  },
+  {
+    "parameterStringId": "adui.pump2.signalling.pch.failure.na2",
+    "readableName": "СИГН: Насос2: авария ПЧ при работе с НА2",
+    "isTech": false,
+    "cellAddress": "W111.07",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump2.signalling.pch.auto.turned.off.na2",
+    "readableName": "СИГН: Насос2: отключение автомата ПЧ при работе с НА2",
+    "isTech": false,
+    "cellAddress": "W111.11",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump2.signalling.soft.starter.auto.turned.off.na2",
+    "readableName": "СИГН: Насос2: отключение автомата УПП при работе с НА2",
+    "isTech": false,
+    "cellAddress": "W111.09",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump2.signalling.pch.driven",
+    "readableName": "СИГН: Насос2: работа от ПЧ",
+    "isTech": false,
+    "cellAddress": "W110.12",
+    "packetNo": 1,
+  },
+  {
+    "parameterStringId": "adui.pump2.signalling.soft.starter.driven",
+    "readableName": "СИГН: Насос2: работа от УПП",
+    "isTech": false,
+    "cellAddress": "W110.13",
+    "packetNo": 1,
+  },
+
+
+
+]

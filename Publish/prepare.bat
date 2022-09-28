@@ -1,0 +1,3 @@
+set PfAppData=C:\Users\...
+del PumpFacts.zip
+"%ProgramFiles%\winrar\rar.exe" a PumpFacts.zip -r -m1 ..\App.PumpFactsService\bin\x86\release\netcoreapp3.1 "%PfAppData%" -x*.pdb -x*App.PumpFactsService\Logs* -x*dev.json -x*development.json

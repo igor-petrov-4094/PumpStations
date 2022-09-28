@@ -1,0 +1,46 @@
+﻿[
+  {
+    "name": "schemas.main",
+    "groupStringIdList": [
+      "group.pch",
+      "group.protections",
+      "group.locks",
+      "group.signalling",
+      "group.mode.indication",
+      "group.control",
+      "group.params"
+    ]
+  },
+
+
+  {
+    "name": "schemas.adui",
+    "groupStringIdList": [
+      "adui.group.pch",
+      "adui.group.soft.starter",
+      "adui.group.params",
+      "adui.pump1.mode.indication",
+      "adui.pump1.state.indication",
+      "adui.pump1.control",
+      "adui.pump1.signalling",
+      "adui.pump2.mode.indication",
+      "adui.pump2.state.indication",
+      "adui.pump2.control",
+      "adui.pump2.signalling",
+
+
+
+
+
+
+
+
+    ]
+  }
+
+
+
+
+
+
+]

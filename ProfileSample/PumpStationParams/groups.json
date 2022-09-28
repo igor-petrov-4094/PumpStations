@@ -1,0 +1,221 @@
+﻿[
+  {
+    "groupStringId": "group.pch",
+    "readableName": "Параметры ПЧ",
+    "parameterStringIdList": [
+      "pch.freq_output",
+      "pch.speed_fact",
+      "pch.motor_current",
+      "pch.motor_voltage",
+      "pch.state.failure",
+      "pch.state.malfunction",
+      "pch.state.inprocess",
+      "pch.state.ready"
+    ]
+  },
+  {
+    "groupStringId": "group.protections",
+    "readableName": "Защиты",
+    "parameterStringIdList": [
+      "protection.dry_run_pump_unit",
+      "protection.pump_unit_current_excess",
+      "protection.voltage_disappearance"
+    ]
+  },
+  {
+    "groupStringId": "group.locks",
+    "readableName": "Блокировки",
+    "parameterStringIdList": [
+      "locks.bore_debet_excess",
+      "locks.bore_consumption_excess"
+    ]
+  },
+  {
+    "groupStringId": "group.signalling",
+    "readableName": "Сигнализация",
+    "parameterStringIdList": [
+      "signalling.pump_aggregate_stopping",
+      "signalling.bore_debet_elevation",
+      "signalling.pump_aggregate_current_elevation",
+      "signalling.bore_level_decrease",
+      "signalling.no_pch_controller_interchange",
+      "signalling.general_failure",
+      "signalling.door_is_open",
+      "signalling.volume_defection",
+    ]
+  },
+  {
+    "groupStringId": "group.mode.indication",
+    "readableName": "Индикация режима",
+    "parameterStringIdList": [
+      "indication.manual",
+      "indication.off",
+      "indication.automate"
+    ]
+  },
+  {
+    "groupStringId": "group.control",
+    "readableName": "Управление",
+    "parameterStringIdList": [
+      "control.pump",
+      "control.general.run",
+      "control.general.stop"
+    ]
+  },
+  {
+    "groupStringId": "group.params",
+    "readableName": "Параметры",
+    "parameterStringIdList": [
+      "params.pressure.given",
+      "params.pressure.fact",
+      "params.level_above_pump",
+      "params.consumption",
+      "D216",
+      "params.computable.level_ex"
+    ]
+  },
+
+
+
+
+
+  {
+    "groupStringId": "adui.group.pch",
+    "readableName": "Группа насосов: Параметры ПЧ",
+    "parameterStringIdList": [
+      "adui.group.pch.freq_output",
+      "adui.group.pch.motor_current",
+      "adui.group.pch.motor_voltage",
+      "adui.group.pch.state.failure",
+      "adui.group.pch.state.inprocess",
+      "adui.group.pch.state.auto.off",
+      "adui.group.pch.state.no.exchange"
+    ]
+  },
+
+  {
+    "groupStringId": "adui.group.soft.starter",
+    "readableName": "Группа насосов: Плавный пуск",
+    "parameterStringIdList": [
+      "adui.group.soft.starter.state.inprocess",
+      "adui.group.soft.starter.state.auto.off"
+    ]
+  },
+
+  {
+    "groupStringId": "adui.group.params",
+    "readableName": "Группа насосов: параметры",
+    "parameterStringIdList": [
+      "adui.group.params.pressure.given",
+      "adui.group.params.pressure.fact",
+      "adui.group.params.pressure.3",
+      "adui.group.params.consumption"
+    ]
+  },
+
+  {
+    "groupStringId": "adui.pump1.mode.indication",
+    "readableName": "Насос1: индикация режима",
+    "parameterStringIdList": [
+      "adui.pump1.mode.indication.manual",
+      "adui.pump1.mode.indication.auto",
+      "adui.pump1.mode.indication.off",
+    ]
+  },
+  {
+    "groupStringId": "adui.pump1.state.indication",
+    "readableName": "Насос1: индикация состояния",
+    "parameterStringIdList": [
+      "adui.pump1.state.indication.failure",
+      "adui.pump1.state.indication.ready",
+    ]
+  },
+
+  {
+    "groupStringId": "adui.pump1.control",
+    "readableName": "Насос1: управление",
+    "parameterStringIdList": [
+      "adui.pump1.pump.control.running",
+      "adui.pump1.pump.control.stopped",
+    ]
+  },
+
+  {
+    "groupStringId": "adui.pump1.signalling",
+    "readableName": "Насос1: управление",
+    "parameterStringIdList": [
+      "adui.pump1.signalling.pch.failure.na1",
+      "adui.pump1.signalling.pch.auto.turned.off.na1",
+      "adui.pump1.signalling.soft.starter.auto.turned.off.na1",
+      "adui.pump1.signalling.pch.driven",
+      "adui.pump1.signalling.soft.starter.driven",
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  {
+    "groupStringId": "adui.pump2.mode.indication",
+    "readableName": "Насос2: индикация режима",
+    "parameterStringIdList": [
+      "adui.pump2.mode.indication.manual",
+      "adui.pump2.mode.indication.auto",
+      "adui.pump2.mode.indication.off",
+    ]
+  },
+  {
+    "groupStringId": "adui.pump2.state.indication",
+    "readableName": "Насос2: индикация состояния",
+    "parameterStringIdList": [
+      "adui.pump2.state.indication.failure",
+      "adui.pump2.state.indication.ready",
+    ]
+  },
+
+  {
+    "groupStringId": "adui.pump2.control",
+    "readableName": "Насос2: управление",
+    "parameterStringIdList": [
+      "adui.pump2.pump.control.running",
+      "adui.pump2.pump.control.stopped",
+    ]
+  },
+
+  {
+    "groupStringId": "adui.pump2.signalling",
+    "readableName": "Насос2: управление",
+    "parameterStringIdList": [
+      "adui.pump2.signalling.pch.failure.na2",
+      "adui.pump2.signalling.pch.auto.turned.off.na2",
+      "adui.pump2.signalling.soft.starter.auto.turned.off.na2",
+      "adui.pump2.signalling.pch.driven",
+      "adui.pump2.signalling.soft.starter.driven",
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

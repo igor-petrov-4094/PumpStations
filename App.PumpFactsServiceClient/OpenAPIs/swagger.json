@@ -1,0 +1,201 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "App.PumpFactsService",
+    "version": "1.0"
+  },
+  "paths": {
+    "/PumpStations": {
+      "get": {
+        "tags": [
+          "PumpStations"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PumpStationDescriptor_ClientIEnumerableDTOWithResultInfo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PumpStationDescriptor_ClientIEnumerableDTOWithResultInfo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PumpStationDescriptor_ClientIEnumerableDTOWithResultInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/StationParams": {
+      "get": {
+        "tags": [
+          "StationParams"
+        ],
+        "parameters": [
+          {
+            "name": "stationName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParameterValue_ClientIEnumerableDTOWithResultInfo"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParameterValue_ClientIEnumerableDTOWithResultInfo"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParameterValue_ClientIEnumerableDTOWithResultInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ParameterValue_Client": {
+        "type": "object",
+        "properties": {
+          "parameterStringId": {
+            "type": "string",
+            "nullable": true
+          },
+          "readableName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isTech": {
+            "type": "boolean"
+          },
+          "format": {
+            "type": "string",
+            "nullable": true
+          },
+          "intValue": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "boolValue": {
+            "type": "boolean"
+          },
+          "isInitialized": {
+            "type": "boolean"
+          },
+          "isBoolean": {
+            "type": "boolean"
+          },
+          "realValueFactor": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParameterValue_ClientIEnumerableDTOWithResultInfo": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "extendedCode": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "resultValue": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParameterValue_Client"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PumpStationDescriptor_Client": {
+        "type": "object",
+        "properties": {
+          "readableName": {
+            "type": "string",
+            "nullable": true
+          },
+          "stringId": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastAvailableTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "failures": {
+            "type": "string",
+            "nullable": true
+          },
+          "motorCurrentFactor": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PumpStationDescriptor_ClientIEnumerableDTOWithResultInfo": {
+        "type": "object",
+        "properties": {
+          "ok": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "extendedCode": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "resultValue": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PumpStationDescriptor_Client"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

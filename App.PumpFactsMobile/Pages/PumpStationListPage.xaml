@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:App.PumpFactsMobile.ViewModels"
+             x:Class="App.PumpFactsMobile.Pages.PumpStationListPage">
+
+    <ContentPage.BindingContext>
+        <viewModels:PumpStationListPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <ActivityIndicator  IsRunning="{Binding IsRefreshing}"
+                                AbsoluteLayout.LayoutFlags="PositionProportional"   
+                                AbsoluteLayout.LayoutBounds="0.5, 0.05, AutoSize, AutoSize"
+            />
+            <StackLayout    Margin="20"
+                            Spacing="10"
+                            Padding="5"
+                            AbsoluteLayout.LayoutFlags="All"  
+                            AbsoluteLayout.LayoutBounds="0,0,1,1"
+                >
+
+                <ListView ItemsSource="{Binding Items}" 
+                  HasUnevenRows="true" 
+                  ItemTapped="OnListViewItemTapped" 
+                     >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="0,5,0,5" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                        <RowDefinition></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <HorizontalStackLayout Grid.Row="0" Grid.Column="0">
+                                        <Ellipse 
+                                            Fill="{Binding PumpStationUnavailibilityTimeColor}"
+                                            WidthRequest="20"
+                                            HeightRequest="20"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center"
+                                            Margin="0,0,0,0"
+                                        />
+
+                                        <Label  
+                                            Margin="5,0,0,0"
+                                            TextColor="Black"
+                                            Text="{Binding psd.ReadableName}"                                        
+                                            Style="{DynamicResource SubtitleTextStyle}" 
+                                            VerticalOptions="Center"
+                                        />
+                                        
+                                        <Label  
+                                            Margin="20,0,0,0"                                          
+                                            LineBreakMode="NoWrap"
+                                            IsVisible="{Binding ShowLastAvailableTime}"
+                                            Text="{Binding LastAvailableTime_String}"
+                                            Style="{DynamicResource SubtitleTextStyle}" 
+                                            VerticalOptions="Center"
+                                        />
+                                    </HorizontalStackLayout>
+
+                                    <Label  
+                                        Grid.Row="3" Grid.Column="0"
+                                        IsVisible="{Binding FailuresNotEmpty}"
+                                        LineBreakMode="NoWrap"
+                                        Text="Авария:"
+                                        TextColor="Red"
+                                        FontAttributes="Bold"
+                                        Style="{DynamicResource SubtitleTextStyle}" 
+                                        VerticalOptions="Center"
+                                    />
+                                    
+                                    <Label  
+                                        Grid.Row="4" Grid.Column="0"
+                                        IsVisible="{Binding FailuresNotEmpty}"
+                                        LineBreakMode="NoWrap"
+                                        Text="{Binding psd.Failures}"
+                                        TextColor="Red"
+                                        FontAttributes="Bold"
+                                        Style="{DynamicResource SubtitleTextStyle}" 
+                                        VerticalOptions="Center"
+                                    />
+                                </Grid>
+
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
